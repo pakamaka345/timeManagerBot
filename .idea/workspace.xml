@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eacc0e53-dd03-4294-8774-d34d4d863eaf" name="Changes" comment=",jiji" />
+    <list default="true" id="eacc0e53-dd03-4294-8774-d34d4d863eaf" name="Changes" comment="finished bot">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/umcs/lessons/DayHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/umcs/lessons/DayHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/umcs/lessons/Plan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/umcs/lessons/Plan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/umcs/lessons/PlanForDay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/umcs/lessons/PlanForDay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/umcs/lessons/actions/IsAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/umcs/lessons/actions/IsAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/umcs/lessons/actions/IsStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/umcs/lessons/actions/IsStart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/umcs/lessons/timeManagerBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/umcs/lessons/timeManagerBot.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -38,7 +48,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -49,23 +59,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.github.copilot.settings.ApplicationConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -87,7 +97,17 @@
       <workItem from="1709755963719" duration="434000" />
       <workItem from="1709795834907" duration="1913000" />
       <workItem from="1709797774084" duration="2728000" />
-      <workItem from="1709802614385" duration="21238000" />
+      <workItem from="1709802614385" duration="21799000" />
+      <workItem from="1709889815289" duration="79000" />
+      <workItem from="1709889981911" duration="5941000" />
+      <workItem from="1709927573344" duration="1395000" />
+      <workItem from="1709982476887" duration="8000" />
+      <workItem from="1709992727357" duration="12213000" />
+      <workItem from="1710022209891" duration="1612000" />
+      <workItem from="1710070649610" duration="11984000" />
+      <workItem from="1710163913157" duration="415000" />
+      <workItem from="1710267469375" duration="7162000" />
+      <workItem from="1710276196223" duration="420000" />
     </task>
     <task id="LOCAL-00001" summary=",jiji">
       <option name="closed" value="true" />
@@ -108,6 +128,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value=",jiji" />
-    <option name="LAST_COMMIT_MESSAGE" value=",jiji" />
+    <MESSAGE value="finished bot" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished bot" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
