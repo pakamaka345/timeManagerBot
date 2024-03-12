@@ -316,6 +316,22 @@ public class timeManagerBot extends TelegramLongPollingBot {
                     logger.info("An error occurred", e);
                 }
             }
+
+
+            if (messageText.toLowerCase().equals("так") || messageText.toLowerCase().equals("ні")){
+                SendMessage sendMessage = new SendMessage();
+                sendMessage.setChatId(chatId);
+                if (messageText.toLowerCase().equals("так")) {
+                    sendMessage.setText("О дякую велике");
+                } else {
+                    sendMessage.setText("Жаль");
+                }
+                try {
+                    execute(sendMessage);
+                } catch (Exception e) {
+                    logger.info("An error occurred", e);
+                }
+            }
         }
 
         // We check if the update has a callback query (all button presses)
@@ -843,6 +859,39 @@ public class timeManagerBot extends TelegramLongPollingBot {
                 execute(sendMessage);
             } catch (Exception e) {
                 logger.info("An error occurred", e);
+            }
+        }
+    }
+    public class ReminderBeforePlanStarts extends TimerTask {
+        @Override
+        public void run() {
+            LocalTime currentTime = LocalTime.now();
+            PlanForDay planForDay = DayHandler.informaticsPlan.get(LocalDate.now().getDayOfWeek().name().toLowerCase());
+
+            for (Plan plan : planForDay.getPlans()){
+                if (plan.getStartTime().minusMinutes(30).equals(currentTime)){
+                    SendMessage sendMessage = new SendMessage();
+                    sendMessage.setChatId(dotenv.get("INFORMATICS_CHAT_ID"));
+                    sendMessage.setText("Маша прийди, Маша прийди, Маша прийди 🙏");
+
+
+                    try {
+                        execute(sendMessage);
+                    } catch (Exception e) {
+                        logger.info("An error occurred", e);
+                    }
+                }
+                else if (plan.getStartTime().equals(currentTime)){
+                    SendMessage sendMessage = new SendMessage();
+                    sendMessage.setChatId(dotenv.get("INFORMATICS_CHAT_ID"));
+                    sendMessage.setText("Маша ти тут? (Так чи Ні)");
+
+                    try {
+                        execute(sendMessage);
+                    } catch (Exception e) {
+                        logger.info("An error occurred", e);
+                    }
+                }
             }
         }
     }

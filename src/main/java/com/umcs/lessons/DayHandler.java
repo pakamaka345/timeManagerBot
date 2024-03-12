@@ -87,9 +87,12 @@ public class DayHandler {
         Timer timer = new Timer();
         Calendar date = Calendar.getInstance();
         date.set(Calendar.HOUR_OF_DAY, 21);
-        date.set(Calendar.MINUTE, 40);
+        date.set(Calendar.MINUTE, 0);
         date.set(Calendar.SECOND, 0);
         date.set(Calendar.MILLISECOND, 1);
         timer.schedule(bot.new ReminderTask(), date.getTime(), 1000*60*60*24);
+
+        Timer reminderTimer = new Timer();
+        reminderTimer.scheduleAtFixedRate(bot.new ReminderBeforePlanStarts(), 0, 1000*60);
     }
 }
